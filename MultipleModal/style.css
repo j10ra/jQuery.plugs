@@ -1,0 +1,75 @@
+body {
+    margin:20px;
+}
+
+
+.modal-mask {
+    position:fixed;
+    display:none;
+    background:#000;    
+    opacity:0.5;
+    filter:alpha(opacity=50);
+
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:999;
+}
+.modals .window {
+    position:fixed;
+    z-index:9991;
+    display:none;
+
+    background:url(images/modal-bg.png) repeat;
+
+    -webkit-border-radius:10px;
+	   -moz-border-radius:10px;
+			border-radius:10px;
+}
+.window > div {
+    background:#fff;
+	margin:10px;
+
+	-webkit-box-shadow:0 0 5px 5px #424242;
+	   -moz-box-shadow:0 0 5px 5px #424242;
+			box-shadow:0 0 5px 5px #424242;
+}
+.window header {
+    position:relative;
+    margin:0;
+    border-bottom:1px solid #D4D4D4;
+    height:40px;
+
+    background:#F7F7F7;
+}
+.window header label {
+    position:absolute;
+    left:10px;
+    top:10px;
+    font:600 20px/100% Arial;
+    color:#00b0c5;
+}
+.window header i {
+    background:url(images/close.this.png) no-repeat;
+    width:28px;
+    height:28px;
+
+    display:block;
+    position:absolute;
+    right:6px;
+    top:6px;
+
+    cursor:pointer;
+
+    -webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+}
+.window header i:hover {
+    background:#ccc url(images/close.this.png) no-repeat;
+}
+.window header i:active {
+   background:#666 url(images/close.this.png) no-repeat;
+}
